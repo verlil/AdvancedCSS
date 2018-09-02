@@ -35,31 +35,33 @@ body {
     clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 }
 
-.logo-box{
+.logo-box {
     position: absolute;
     top: 40px;
     left: 40px;
 }
 
-.logo{
+.logo {
     height: 35px;
 }
 
-.text-box{
+.text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
+    text-align: center;
 }
 
-.heading-primary{
+.heading-primary {
     color: #fff;
     text-transform: uppercase;
 
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
-.heading-primary-main{
+.heading-primary-main {
     display: block;
     font-size: 60px;
     font-weight: 400;
@@ -68,7 +70,7 @@ body {
     animation-duration: 1.5s;
 }
 
-.heading-primary-sub{
+.heading-primary-sub {
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -79,34 +81,59 @@ body {
 
 @keyframes moveInLeft {
     0% {
-        opacity:  0;
+        opacity: 0;
         transform: translateX(-100px);
     }
 
     80% {
-        opacity:  1;
+        opacity: 1;
         transform: translateX(10px);
     }
 
     100% {
-        opacity:  1;
+        opacity: 1;
         transform: translateX(0px);
     }
 }
 
 @keyframes moveInRight {
     0% {
-        opacity:  0;
+        opacity: 0;
         transform: translateX(100px);
     }
 
     80% {
-        opacity:  1;
+        opacity: 1;
         transform: translateX(-10px);
     }
 
     100% {
-        opacity:  1;
+        opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2); /*  X, Y, blur, color  */
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2); /*  X, Y, blur, color  */
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
