@@ -25,7 +25,7 @@ nav::after {
 .navigation li:first-child {
   margin: 0;
 }
-.navigation li a:link {
+.navigation li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
@@ -35,27 +35,25 @@ nav::after {
   float: right;
 }
 
-.btn-main,
-.btn-hot {
+.btn-hot, .btn-main {
   padding: 10px;
   display: inline-block;
   text-align: center;
   border-radius: 100px;
+  width: 150px;
   text-decoration: none;
   text-transform: uppercase;
-  width: 150px;
   color: #eee;
 }
 
-.btn-main:link {
+.btn-main {
   background-color: #f08a5d;
 }
 .btn-main:hover {
   background-color: #ec682e;
-  color: #eee;
 }
 
-.btn-hot:link {
+.btn-hot {
   background-color: #b83b5e;
 }
 .btn-hot:hover {
